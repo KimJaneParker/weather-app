@@ -76,3 +76,8 @@ h3 {
 .day {
   font-size: 18px;
 }
+
+.source-code {
+  position: relative;
+  right: 3px;
+}
