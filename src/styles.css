@@ -1,8 +1,33 @@
+h2 {
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 0px;
+  color: rgb(80, 88, 99);
+}
+
+h3 {
+  font-size: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+  text-align: right;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30 auto;
+}
+
 .weather-app {
+  padding: 20px;
   border: 3px solid #79d6de;
-  padding: 30px;
-  margin: 20px auto;
-  max-width: 630px;
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   color: #393e46;
@@ -18,24 +43,9 @@
   font-size: 18px;
 }
 
-h2 {
-  font-size: 25px;
-  margin: 0 auto;
-  padding: 0px 20px 0px 0px;
-  color: rgb(80, 88, 99);
-}
-
-h3 {
-  font-size: 20px;
-}
-
 #temp {
   text-align: right;
   font-size: 45px;
-}
-.statistics {
-  font-size: 15px;
-  text-align: right;
 }
 
 #search-input {

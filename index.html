@@ -20,7 +20,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
+      <div class="weather-app-wrapper">
+          <div class="weather-app">
       <div class="row">
         <div class="col-6">
         <h1 id="city">
@@ -38,11 +39,14 @@
         <h1 id ="temp"> 
         </h1>
       <br />
-        <p class="statistics">
+      <ul>
+      <li>
          Humidity: <span id ="humidity"></span>%
-        <br />
+        </li>
+        <li>
          Wind: <span id= "wind"></span>km/h
-        </p>
+        </li>
+        </ul>
       </div>
         <br />
     <form id="search-form">
@@ -53,9 +57,6 @@
       <input type="submit" value="Search"  class="btn btn-info" id="search-button" />
       <input type="submit" value="Current"  class="btn btn-success" id = "current-location"/>
     </form>
-    </div>
-   </nav>
-    </div>
     <hr>
     <br />
     <div class="row">
@@ -116,14 +117,15 @@
       </div>
      </div> 
   </div>
-</div>
 <br/>
+</div>
 <small class="source-code">
-    <a href ="https://github.com/KimJaneParker/weather-app" >
-        Open source code
+    <a href ="https://github.com/KimJaneParker/weather-app" target="_blank"
+     > Open source code
     </a>
     , by KimParker
 </small>
+    </div>
 <script src="src/index.js"></script>
 </body>
 </html>
