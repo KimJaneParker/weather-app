@@ -53,13 +53,20 @@
         </ul>
       </div>
         <br />
-    <form id="search-form">
-      <input type="text" placeholder="Search a city"
-      autocomplete="off"
-      autofocus="on"
-      id="search-input"/>
+    <form id="search-form" class="mb-3" c>
+      <div class = "row"> 
+          <div class="col-9"> 
+      <input type="text" 
+             placeholder="Search a city"
+             autocomplete="off"
+             class ="form-control"
+             autofocus="on"
+             id="search-input"/>
+            </div>
+            <div class="col-3">
       <input type="submit" value="Search"  class="btn btn-info" id="search-button" />
-      <input type="submit" value="Current"  class="btn btn-success" id = "current-location"/>
+     </div>
+     </div>
     </form>
     <hr>
     <br />

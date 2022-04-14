@@ -61,14 +61,6 @@ function area(position) {
   axios.get(apiUrl).then(displayWeather);
 }
 
-function currentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(location);
-}
-
-let getCurrentLocation = document.querySelector("#current-location");
-getCurrentLocation.addEventListener("click", currentLocation);
-
 let searchform = document.querySelector("#search-form");
 searchform.addEventListener("submit", handleSubmit);
 
