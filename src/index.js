@@ -30,8 +30,12 @@ function displayWeather(response) {
   document.querySelector("#temp").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
+  document.querySelector("#humidity").innerHTML = Math.round(
+    response.data.main.humidity
+  );
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
   let iconElement = document.querySelector("#icon");
