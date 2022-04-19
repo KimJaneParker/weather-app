@@ -95,15 +95,15 @@ li:first-letter {
   color: (80, 88, 99);
 }
 
-.weather-forcast-date {
+.weather-forecast-date {
   font-size: 16px;
   opacity: 0.7;
 }
 
-.weather-forcast-temperature {
+.weather-forecast-temperature {
   font-size: 13px;
 }
 
-.weather-forcast-min {
+.weather-forecast-min {
   opacity: 0.7;
 }
