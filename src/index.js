@@ -24,7 +24,8 @@ let dateToday = document.querySelector("#dateTime");
 let currentTime = new Date();
 dateToday.innerHTML = formatDate(currentTime);
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class = "row">`;
@@ -54,6 +55,14 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "d9d53cca51f57e70b244280a0f45fc6e";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -74,6 +83,8 @@ function displayWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
+
   getForecast(response.data.coord);
 }
 
@@ -99,4 +110,3 @@ let searchform = document.querySelector("#search-form");
 searchform.addEventListener("submit", handleSubmit);
 
 search("Cape Town");
-displayForecast();
