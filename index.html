@@ -12,78 +12,84 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3e40aaa755.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3e40aaa755.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-          <div class="weather-app">
-      <div class="row">
-        <div class="overview">
-        <h1 id="city"> 
-        </h1>
-     <ul>
-      <li id="dateTime">
-          </li>
-      <li id= "weather-description">
-      </li>
-      </ul>
-       </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="clearfix weather-temp">
-                    <img src="" alt="Clear" id="icon" class="float-left" />
-                    <div class="float-left">
-                <strong id ="temp"></strong>
-                <span class="units">°C</span>
-                </div>
-                </div>
-                </div>
-     <div class="col-6">
-     <ul>
-      <li>
-         Humidity: <span id ="humidity"></span>%
-        </li>
-        <li>
-         Wind: <span id= "wind"></span>km/h
-        </li>
-        </ul>
-      </div>
-    </div>
-        <br />
-    <form id="search-form" class="mb-3" c>
-      <div class = "row"> 
-          <div class="col-9"> 
-      <input type="text" 
-             placeholder="Search a city"
-             autocomplete="off"
-             class ="form-control"
-             autofocus="on"
-             id="search-input"/>
+        <div class="weather-app">
+          <div class="row">
+            <div class="overview">
+              <h1 id="city"></h1>
+              <ul>
+                <li id="dateTime"></li>
+                <li id="weather-description"></li>
+              </ul>
             </div>
-            <div class="col-3">
-      <input type="submit" value="Search"  class="btn btn-info" id="search-button" />
-     </div>
-     </div>
-    </form>
-    <hr>
-    <br />
-    <div class="weather-forecast" id="forecast">
-       
-  </div>
-</div>
-</div>
-<small class="source-code">
-    <a href ="https://github.com/KimJaneParker/weather-app" target="_blank"
-     > Open source code
-    </a>
-    , by KimParker
-</small>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temp">
+                  <img src="" alt="Clear" id="icon" class="float-left" />
+                  <div class="float-left">
+                    <strong id="temp"></strong>
+                    <span class="units">°C</span>
+                  </div>
+                </div>
+              </div>
+            
+        </br>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <form id="search-form" class="mb-3" c>
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="text"
+                  placeholder="Search a city"
+                  autocomplete="off"
+                  class="form-control"
+                  autofocus="on"
+                  id="search-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-info"
+                  id="search-button"
+                />
+              </div>
+            </div>
+          </form>
+          <hr />
+          <br />
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
+      </div>
+      <small class="source-code">
+        <a href="https://github.com/KimJaneParker/weather-app" target="_blank">
+          Open source code
+        </a>
+        , by KimParker
+      </small>
     </div>
-<script src="src/index.js"></script>
-</body>
+    <script src="src/index.js"></script>
+  </body>
 </html>
